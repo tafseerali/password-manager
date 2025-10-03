@@ -16,7 +16,7 @@ const Table = ({ pswArray, setpswArray, setform }) => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const res = await fetch("http://localhost:5000/", {
+          const res = await fetch("/api", {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ id })
@@ -78,28 +78,28 @@ const Table = ({ pswArray, setpswArray, setform }) => {
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">
                         <div className='flex items-center'>
                           <span>{item.site}</span>
-                          <span onClick={() => { copyText(item.site) }} className='cursor-pointer w-fit h-fit'><img className='size-6' src="../public/copy.svg" alt="" /></span>
+                          <span onClick={() => { copyText(item.site) }} className='cursor-pointer w-fit h-fit'><img className='size-6' src="/copy.svg" alt="" /></span>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
                         <div className='flex items-center'>
                           <span>{item.username}</span>
-                          <span onClick={() => { copyText(item.username) }} className='cursor-pointer w-fit h-fit'><img className='size-6' src="../public/copy.svg" alt="" /></span>
+                          <span onClick={() => { copyText(item.username) }} className='cursor-pointer w-fit h-fit'><img className='size-6' src="/copy.svg" alt="" /></span>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
                         <div className='flex items-center'>
                           <span>{"*".repeat(7)}</span>
-                          <span onClick={() => { copyText(item.password) }} className='cursor-pointer w-fit h-fit'><img className='size-6' src="../public/copy.svg" alt="" /></span>
+                          <span onClick={() => { copyText(item.password) }} className='cursor-pointer w-fit h-fit'><img className='size-6' src="/copy.svg" alt="" /></span>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
                         <div className='flex items-center justify-end gap-2 w-full'>
                           <span onClick={() => handleEdit(item.id)} className='cursor-pointer'>
-                            <img className='size-6' src="../public/edit.svg" alt="" />
+                            <img className='size-6' src="/edit.svg" alt="" />
                           </span>
                           <span onClick={() => handleDelete(item.id)} className='cursor-pointer'>
-                            <img className='size-5' src="../public/delete.svg" alt="" />
+                            <img className='size-5' src="/delete.svg" alt="" />
                           </span>
                         </div>
                       </td>

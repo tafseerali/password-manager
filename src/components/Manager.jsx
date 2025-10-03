@@ -86,13 +86,13 @@ const Manager = () => {
     }
 
     const showPassword = () => {
-        if (ref.current.src.includes("http://localhost:5173/public/hide.png")) {
-            ref.current.src = "../public/show.png"
+        if (ref.current.src.includes("/hide.png")) {
+            ref.current.src = "/show.png"
             passwordRef.current.type = "password"
         }
 
         else {
-            ref.current.src = "../public/hide.png"
+            ref.current.src = "/hide.png"
             passwordRef.current.type = "text"
         }
     }
@@ -124,7 +124,7 @@ const Manager = () => {
                             <input ref={passwordRef} name="password" value={form.password} onChange={handleChange} type="password" className='border border-green-300 w-full rounded-full px-2 py-1 outline-none text-gray-700 text-sm pr-8' placeholder='Enter password' />
 
                             <div onClick={() => showPassword()} className='absolute top-0 right-0 h-full flex items-center mr-2 cursor-pointer'>
-                                <img ref={ref} className='size-5' src="../public/show.png" alt="" />
+                                <img ref={ref} className='size-5' src="/show.png" alt="" />
                             </div>
 
                         </div>
