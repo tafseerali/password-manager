@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-clear-button,
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-password-toggle-button {
+  display: none !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
+input[type="password"] {
+  -webkit-text-security: disc;
+}
