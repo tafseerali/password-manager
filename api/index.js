@@ -1,6 +1,6 @@
-const express = require('express')
-const { MongoClient } = require('mongodb')
-const cors = require('cors')
+import express from "express";
+import { MongoClient } from "mongodb";
+import cors from "cors";
 
 const app = express()
 
