@@ -1,6 +1,6 @@
-import express from "express";
-import { MongoClient } from "mongodb";
-import cors from "cors";
+import express from 'express'
+import { MongoClient } from 'mongodb'
+import cors from 'cors'
 
 const app = express()
 
@@ -68,4 +68,5 @@ app.delete('/api', async (req, res) => {
   }
 })
 
-module.exports = app
+// Export as default for Vercel serverless
+export default app
