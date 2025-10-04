@@ -102,7 +102,7 @@ const Manager = () => {
 
     return (
         <>
-            <div className="max-eighty:w-[95%] eighty:container eighty:w-[65%] h-screen mx-auto pt-10">
+            <div className="max-eighty:w-[95%] eighty:container eighty:w-[65%] min-h-screen mx-auto pt-10">
                 <ToastContainer
                     position="top-right"
                     autoClose={5000}

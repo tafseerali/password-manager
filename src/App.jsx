@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="w-full h-screen bg-gradient-to-r from-sky-50 to-pink-50">
+      <div className="w-full min-h-screen bg-gradient-to-r from-sky-50 to-pink-50">
         <Manager/>
       </div>
 
