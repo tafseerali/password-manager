@@ -51,7 +51,7 @@ const Manager = () => {
                     body: JSON.stringify({ ...form, id: uuidv4() })
                 })
 
-                await getPasswords()
+                // await getPasswords()
 
                 // setpswArray([...pswArray, { ...form, id: uuidv4() }])
                 setform({ site: "", username: "", password: "" })
