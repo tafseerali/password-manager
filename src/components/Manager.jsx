@@ -118,11 +118,11 @@ const Manager = () => {
                     <p className='text-gray-500 text-sm'>Your own Password Manager</p>
                 </div>
                 <div className="inputs flex flex-col items-center gap-6 max-six:gap-3 mt-5">
-                    <input name="site" value={form.site} onChange={handleChange} type="text" className='border border-green-300 w-full rounded-full px-2 py-1 outline-none text-gray-700 text-sm' placeholder='Enter website URL' />
+                    <input name="site" value={form.site} onChange={handleChange} type="text" className='border border-green-300 w-full rounded-full px-2 py-1 outline-none text-gray-700 text-sm max-six:h-10' placeholder='Enter website URL' />
                     <div className=' w-full flex gap-3 max-six:flex-col max-six:items-center'>
-                        <input name="username" value={form.username} onChange={handleChange} type="text" className='border border-green-300 w-3/4 rounded-full px-2 py-1 outline-none text-gray-700 text-sm max-six:w-full' placeholder='Enter username' />
+                        <input name="username" value={form.username} onChange={handleChange} type="text" className='border border-green-300 w-3/4 rounded-full px-2 py-1 outline-none text-gray-700 text-sm max-six:w-full max-six:h-10' placeholder='Enter username' />
                         <div className='w-1/4 max-six:w-full relative'>
-                            <input ref={passwordRef} name="password" value={form.password} onChange={handleChange} type="password" className='border border-green-300 w-full rounded-full px-2 py-1 outline-none text-gray-700 text-sm pr-8' placeholder='Enter password' />
+                            <input ref={passwordRef} name="password" value={form.password} onChange={handleChange} type="password" className='border border-green-300 w-full rounded-full px-2 py-1 outline-none text-gray-700 text-sm pr-8 max-six:h-10' placeholder='Enter password' />
 
                             <div onClick={() => showPassword()} className='absolute top-0 right-0 h-full flex items-center mr-2 cursor-pointer'>
                                 <img ref={ref} className='size-5' src="/show.png" alt="" />
